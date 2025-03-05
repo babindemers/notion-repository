@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hébergement</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        .swiper {
+            width: 80%;
+            max-width: 600px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Swiper Carousel -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/hébergement/chambre-intime.png" alt="Intime - Chambre"></div>
+            <div class="swiper-slide"><img src="../images/hébergement/salon-intime.png" alt="Intime - Salon"></div>
+            <div class="swiper-slide"><img src="../images/hébergement/corridor-ensoleillé.png" alt="Ensoleillé - Corridor"></div>
+            <div class="swiper-slide"><img src="../images/hébergement/chambre-ensoleillé.png" alt="Ensoleillé - Chambre"></div>
+            <div class="swiper-slide"><img src="../images/hébergement/salle-de-bain-ensoleillé.png" alt="Ensoleillé - Salle de bain"></div>
+        </div>
+
+        <!-- Pagination (Dots) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            loop: true,             // Infinite loop
+            autoplay: {
+                delay: 3000,        // Auto-slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,    // Allows users to click dots
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+
+</body>
+</html>

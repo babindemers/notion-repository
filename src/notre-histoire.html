@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre histoire</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        .swiper {
+            width: 80%;
+            max-width: 600px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Swiper Carousel -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/notre-histoire/1-saint-alex.png" alt="St-Alex"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/2-party.png" alt="Party"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/3-graduation-016.png" alt="Graduation secondaire"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/4-déménagement.png" alt="Déménagement"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/5-colocs.png" alt="Colocs"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/6-graduation-karina.png" alt="Graduation Karina"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/7-condo.png" alt="Condo"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/8-graduation-will.png" alt="Graduation William"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/9-italie.png" alt="Italie"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/10-owls-head.png" alt="Owl's Head"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/11-danika-oli.png" alt="Danika et Olivier"></div>
+            <div class="swiper-slide"><img src="../images/notre-histoire/12-danika-alexe.png" alt="Danika et Alexe"></div>
+        </div>
+
+        <!-- Pagination (Dots) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            loop: true,             // Infinite loop
+            autoplay: {
+                delay: 3000,        // Auto-slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,    // Allows users to click dots
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+
+</body>
+</html>
